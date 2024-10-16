@@ -37,6 +37,6 @@ public class AccountEventSourcingHandler implements EventSourcingHandler<Account
 
     @Override
     public void republishEvents() {
-
+        var aggregateIds = eventStore.getAggregateIds();
     }
 }
